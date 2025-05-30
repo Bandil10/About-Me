@@ -1,0 +1,103 @@
+body
+{
+    background-color: #1c1c1c;
+    font-family: "Afacad Flux", sans-serif;
+    font-weight: 700;
+    padding: 20px;
+    justify-items: center;
+    animation: blurFade 1s ease-in-out;
+}
+
+.container
+{
+    margin: 10px;
+    padding: 10px;
+}
+
+.about
+{
+    padding: 7.5px;
+}
+
+.projects
+{
+    padding: 7.5px;
+}
+
+.certifications
+{
+    padding: 7.5px;
+}
+
+h3,  li , .icons img
+{
+    padding: 7.5px;
+    transition: all 0.1s ease-in-out;
+}
+
+
+h3
+{
+    width: max-content;
+    cursor: pointer;
+    margin: 4px;
+    color: white;
+}
+
+li
+{
+    width: max-content;
+    cursor: pointer;
+    color: #929191;
+}
+
+a
+{
+    cursor: pointer;
+    color: rgb(234, 234, 234);
+}
+
+.projects a
+{
+    margin-right: 10px;
+}
+
+.certifications a
+{
+    margin-left: 10px;
+}
+
+h3:hover
+{
+    transform: scale(1.05);
+}
+
+li:hover
+{
+    color: white;
+}
+
+@keyframes blurFade {
+    0% {
+        opacity: 0;
+        filter: blur(5px);
+        transform: translateY(-5px);
+    }
+    100% {
+        opacity: 1;
+        filter: blur(0);
+        transform: translateY(0);
+    }
+}
+
+.icons img
+{
+    width: 50px;
+    height: 50px;
+}
+
+.icons img:hover
+{
+    transform: scale(1.1);
+}
+
